@@ -21,7 +21,7 @@ class Scraper
   end
 
   def self.scrape_profile_page(profile_slug)
-    
+
     html = File.read(profile_slug)
     profile_page = Nokogiri::HTML(html)
     student = {}
@@ -37,8 +37,8 @@ class Scraper
         student[:blog]=link
       end
     end
-    
-        
+
+
 student
 
   end
